@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { smartphoneList } from './data';
-import Card from './Card';
-import NavigationControls from './NavigationControls';
+import Card from './Components/Card';
+import NavigationControls from './Components/NavigationControls';
 import './App.css';
 
 function App() {

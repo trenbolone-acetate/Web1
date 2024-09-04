@@ -1,38 +1,52 @@
 .App {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #bebbd8;
 }
-button{
+
+.NavigationControls {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  width: 100%; /* Take full width of the parent container */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+button {
   background: none;
-	border: none;
-	font: inherit;
-	outline: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
   font-size: xxx-large;
   padding: 1%;
-  margin: 3%;
+  margin: 0%;
   transition: 0.5s;
   background: rgba(140, 138, 160, 0);
 }
-button:hover{
+
+button:hover {
+  cursor: pointer;
   background: rgba(140, 138, 160, 0.6);
   box-shadow: 0 0 10px 10px rgba(140, 138, 160, 0.6);
   transition: 0.5s;
 }
-button:disabled{
+
+button:disabled {
   color: gray;
   box-shadow: none;
   cursor: not-allowed;
 }
-button:disabled:hover{
+
+button:disabled:hover {
   background: rgba(140, 138, 160, 0);
   color: gray;
   box-shadow: none;
   cursor: not-allowed;
 }
+
 .Card {
   background: #fff;
   padding: 20px;
@@ -59,38 +73,4 @@ button:disabled:hover{
 
 .Card-link:hover {
   text-decoration: underline;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
