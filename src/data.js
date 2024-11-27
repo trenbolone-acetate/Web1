@@ -1,4 +1,4 @@
-export const smartphoneList = [{
+export const smartphoneListData = [{
     name: 'iPhone 13 Pro',
     manufacturer: 'Apple',
     description: 'The iPhone 13 Pro features a 6.1-inch Super Retina XDR display, A15 Bionic chip, and a triple-camera system with improved low-light performance.',

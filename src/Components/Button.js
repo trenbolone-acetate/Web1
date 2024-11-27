@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Button({ onClick, disabled, children }) {
-  return (
-    <button onClick={onClick} disabled={disabled}>
-      {children}
-    </button>
-  );
+class Button extends Component {
+  render() {
+    const { onClick, disabled, children } = this.props;
+
+    return (
+      <button onClick={onClick} disabled={disabled}>
+        {children}
+      </button>
+    );
+  }
 }
 
 export default Button;
